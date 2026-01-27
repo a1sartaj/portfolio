@@ -1,12 +1,32 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.font-aladin {
-  font-family: "Aladin", system-ui;
+
+@theme {
+  --color-blue: #4B40DF;
+  --color-purple: #D553D3;
+
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-card: #f3f4f6;
+
+  --color-primary: #4B40DF;
+  --color-secondary: #D553D3;
 }
 
-.font-roboto {
-  font-family: "Roboto", sans-serif;
+
+
+body {
+  width: 100%;
+  font-family: var(--font-roboto);
 }
 
+html.dark {
+  --color-bg: #00001a;
+  --color-text: white;
+  --color-card: #1e293b;
+}
+
+.aladin {
+  font-family: var(--font-aladin)
+}
