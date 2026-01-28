@@ -37,7 +37,7 @@ export default function ProjectCard({ project }) {
                 </h3>
 
                 <p className="mt-3 text-sm text-text-muted h-10 overflow-hidden">
-                    {project.shortDesc}
+                    {project.shortDescription}
                 </p>
 
                 {/* Tech */}
