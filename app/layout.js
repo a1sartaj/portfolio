@@ -1,5 +1,7 @@
+import Navbar from '@/components/Navbar';
 import './globals.css'
 import { Roboto, Aladin } from 'next/font/google'
+import Footer from '@/components/Footer';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -54,7 +56,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={`${aladin.variable} ${roboto.variable} relative bg-bg text-text transition-colors duration-300 min-h-screen `} >
-        {children}
+
+        <header className="sticky top-0 z-50  bg-bg py-2 ">
+          <Navbar />
+        </header>
+
+        <main className="max-w-7xl mx-auto px-2 md:px-0" >
+          {children}
+        </main>
+
+        <Footer />
       </body>
     </html>
   )

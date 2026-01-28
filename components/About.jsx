@@ -12,7 +12,7 @@ export default function About() {
                     alt="Sartaj Alam"
                     width={420}
                     height={420}
-                    className="rounded-2xl shadow-lg object-cover"
+                    className="rounded-2xl shadow-lg object-cover bg-card "
                 />
             </div>
 

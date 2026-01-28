@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Personal Portfolio – Sartaj Alam
+A modern, responsive developer portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and experience as a MERN Stack Developer.
 
-## Getting Started
+- 🔗 Live Website: https://a1sartaj.in
+- 🔗 GitHub: https://github.com/a1sartaj/portfolio
 
-First, run the development server:
+## 🚀 About the Project
+This portfolio is designed to present my work in a clean and professional way.
+It includes a landing page with smooth navigation, a dynamic projects section with detailed project pages, dark/light mode support, and SEO optimization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### The goal of this project is to:
+- Showcase real-world projects
+- Demonstrate frontend & backend knowledge
+- Provide an easy way for recruiters to understand my skills and experience
+
+## ✨ Features
+
+- ⚡ Built with Next.js App Router 
+- 🌙 Dark / Light mode with persistent theme
+- 📱 Fully responsive design
+- 🧭 Route-aware dynamic navbar
+- 🗂 Projects listing with dynamic project detail pages
+- 🧩 Clean UI with reusable components
+- 🔍 SEO-friendly (meta tags, Open Graph, Twitter cards)
+- 🚀 Fast performance and optimized images
+
+## 🛠 Tech Stack
+### Frontend
+
+- Next.js
+
+- React
+
+- Tailwind CSS
+
+- JavaScript (ES6+)
+
+### Tools & Libraries
+
+- React Icons
+
+- Google Fonts
+
+- Git & GitHub
+
+## 📂 Project Structure
+```
+app/
+|-layout.js
+|-page.js
+|-projects/
+|   |-page.js
+|   |-[slug]/page.js
+component/
+data/
+public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧠 Key Highlights
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Dynamic Routing:
+Each project has its own detail page using dynamic routes (/projects/[slug]).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Scalable Data Structure:
+Projects are managed from a single data file, making it easy to add or update content.
 
-## Learn More
+### User Experience Focused:
+Clean navigation, readable content, and meaningful sections instead of long documentation.
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 Running the Project Locally
+### 1. Clone the repository:
+```
+git clone https://github.com/a1sartaj.in/portfolio.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Install dependencies:
+```
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Start the development server:
+```
+npm run dev
+```
 
-## Deploy on Vercel
+### 4. Open in browser:
+```
+https://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌍 Deployment
+- **Hosting:** Vercel
+- **Build Tool:** Next.js production build
+- **Assets:** Optimized using Next.js Image component
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📌 Future Improvements
+- Add animations
+
+## 👨‍💻 Author
+### Sartaj Alam
+MERN Stack Developer
+- 🌐 Portfolio: https://a1sartaj.in
+
+- 💼 LinkedIn: https://linkedin.com/in/a1sartaj
+
+- 🐙 GitHub: https://github.com/a1sartaj/portfolio
+
+## 📄 License
+
+This project is licensed under the **MIT License**.

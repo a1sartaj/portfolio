@@ -14,7 +14,9 @@
   --color-secondary: #D553D3;
 }
 
-
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;

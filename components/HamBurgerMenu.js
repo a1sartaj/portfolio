@@ -1,11 +1,18 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 
 const HamBurgerMenu = () => {
     const [open, setOpen] = useState(false);
     const menuRef = useRef(null);
+
+    const pathname = usePathname();
+
+    const isHome = pathname === "/";
+    const isProjectDetail = pathname.startsWith("/projects/");
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -38,12 +45,31 @@ const HamBurgerMenu = () => {
             {open && (
                 <ul className="absolute left-1/2 -translate-x-1/2  mt-4 w-64 bg-white text-black p-6 rounded-xl shadow-lg flex flex-col gap-4">
 
-                    {['HOME', 'ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'].map((item) => (
-                        <li key={item} >
-                            <a href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}>{item}</a>
-                        </li>
+                    {isHome && (
+                        <>
+                            <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#home">Home</a>
+                            <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#about">About</a>
+                            <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#skills">Skills</a>
+                            <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#projects">Projects</a>
+                            <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#contact">Contact</a>
+                        </>
+                    )}
 
-                    ))}
+                    {!isHome && !isProjectDetail && (
+                        <>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/">Home</Link>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/projects">Projects</Link>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/#contact">Contact</Link>
+                        </>
+                    )}
+
+                    {isProjectDetail && (
+                        <>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/projects">← Back to Projects</Link>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/">Home</Link>
+                            <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/#contact">Contact</Link>
+                        </>
+                    )}
 
                     <button
                         onClick={() => setOpen(false)}

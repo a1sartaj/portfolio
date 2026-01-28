@@ -3,8 +3,15 @@
 import { FaPaperPlane } from "react-icons/fa";
 import HamBurgerMenu from "./HamBurgerMenu";
 import ThemeToggle from "./ThemeToggle";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
+
+    const pathname = usePathname();
+
+    const isHome = pathname === "/";
+    const isProjectDetail = pathname.startsWith("/projects/");
 
     return (
         <nav className="flex items-center justify-between max-w-7xl  mx-auto px-2 md:px-0">
@@ -12,13 +19,32 @@ export default function Navbar() {
 
 
             <ul className="hidden md:flex gap-1 lg:gap-10 text-lg transition-all duration-300 ease-in"  >
-                {['HOME', 'ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'].map((item) => (
-                    <li
-                        key={item}
-                        className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" >
-                        <a href={`#${item.toLowerCase()}`}>{item}</a></li>
 
-                ))}
+                {isHome && (
+                    <>
+                        <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#home">Home</a>
+                        <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#about">About</a>
+                        <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#skills">Skills</a>
+                        <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#projects">Projects</a>
+                        <a className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="#contact">Contact</a>
+                    </>
+                )}
+
+                {!isHome && !isProjectDetail && (
+                    <>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/">Home</Link>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/projects">Projects</Link>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/#contact">Contact</Link>
+                    </>
+                )}
+
+                {isProjectDetail && (
+                    <>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/projects">← Back to Projects</Link>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/">Home</Link>
+                        <Link className="px-3 py-1 rounded-full hover:bg-gray-200/40  transition" href="/#contact">Contact</Link>
+                    </>
+                )}
             </ul>
 
             {/* HamburgerMenu */}
