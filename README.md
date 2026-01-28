@@ -28,19 +28,14 @@ It includes a landing page with smooth navigation, a dynamic projects section wi
 ### Frontend
 
 - Next.js
-
 - React
-
 - Tailwind CSS
-
 - JavaScript (ES6+)
 
 ### Tools & Libraries
 
 - React Icons
-
 - Google Fonts
-
 - Git & GitHub
 
 ## 📂 Project Structure
@@ -100,9 +95,7 @@ https://localhost:3000
 ### Sartaj Alam
 MERN Stack Developer
 - 🌐 Portfolio: https://a1sartaj.in
-
 - 💼 LinkedIn: https://linkedin.com/in/a1sartaj
-
 - 🐙 GitHub: https://github.com/a1sartaj/portfolio
 
 ## 📄 License

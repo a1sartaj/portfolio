@@ -124,13 +124,48 @@ export const projects = [
   },
 
   {
-    slug: "next-portfolio",
-    title: "Personal Portfolio",
-    description:
-      "My personal portfolio built with Next.js, Tailwind CSS, and modern UI principles.",
-    tech: ["Next.js", "Tailwind"],
-    image: "/images/projects/portfolio.png",
-    github: "https://github.com/a1sartaj/portfolio",
-    live: "https://a1sartaj.in",
+  slug: "personal-portfolio",
+  title: "Personal Portfolio Website",
+
+  shortDescription:
+    "A modern, responsive portfolio website built with Next.js to showcase my projects, skills, and experience as a MERN Stack Developer.",
+
+  description:
+    "This is my personal developer portfolio built using Next.js and Tailwind CSS. The goal of this project is to present my work in a clean, professional, and recruiter-friendly way. It includes a dynamic projects section with detailed project pages, dark/light mode support, SEO optimization, and a responsive layout across all devices.",
+
+  image: "/images/projects/portfolio.png",
+
+  tech: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "Git",
+    "Vercel",
+  ],
+
+  github: "https://github.com/a1sartaj/portfolio",
+  live: "https://a1sartaj.in",
+
+  problem:
+    "Many developer portfolios lack structure, clarity, and scalability. Recruiters often struggle to quickly understand a developer’s skills, project depth, and problem-solving ability from cluttered or poorly designed portfolios.",
+
+  features: [
+    "Responsive layout for mobile, tablet, and desktop",
+    "Dark and light theme with persistent state",
+    "Dynamic projects listing with detail pages",
+    "Route-aware navigation for better UX",
+    "SEO optimized with Open Graph and Twitter cards",
+    "Reusable and scalable component structure",
+  ],
+
+  deployment: {
+    frontend: "Vercel",
   },
+
+  futureImprovements: [
+    "Add animations and page transitions",
+  ],
+}
+
 ];
