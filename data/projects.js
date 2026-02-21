@@ -1,5 +1,57 @@
 export const projects = [
   {
+    slug: "mern-movie",
+    title: "Movie Ticket Booking App",
+    shortDescription: "A functinality full stack movie ticket booking application with admin panel ",
+    description: 'A full-stack production-style Movie Ticket Booking Web Application built with the MERN stack. Users can browse movies, select shows, choose seats, and book tickets, while Admin can manage movies, shows, and users.',
+
+    tech: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Bcryptjs', 'jsonwebtoken', 'dotenv', 'node-cron', 'React', 'Vite', 'TailwindCSS', 'Axios', 'React Router', 'React Hot Toast', 'QRCode React'],
+
+    image: "/images/projects/movie.png",
+    github: "https://github.com/a1sartaj/shows",
+    live: "https://shows.a1sartaj.in",
+
+    problem: 'This movie ticket booking website help to see new movie and there timing for shows so that movie lover can book ticket from their home.',
+
+    features: [
+      "Single login system for User & Admin",
+      "Password hashing using bcrypt",
+      "JWT-based authentication using Authorization header",
+      "Role-based routes protection (USER / ADMIN)",
+      "Secure booking ownership validation",
+      "Movies fetched from TMDB API",
+      "Movies listing with pagination",
+      "Trailer integration (YouTube)",
+      "Admin can create and manage shows",
+      'Auto expire past shows using TTL index',
+      "Dynamic seat layout",
+      "Bookied seats disabled",
+      "Secure ticket booking",
+      "Booking confirmation page",
+      "QR code ticket generation",
+    ],
+
+    deployment: {
+      frontend: 'VPS server',
+      backend: 'VPS server',
+      database: 'VPS sever'
+    },
+
+    futureImprovements: [
+      'Seat Hold system for 5 minutes',
+      'Real time seat update (Socket.io)',
+      'Payment gateway',
+      'Cancel booking page',
+      'Ticket pdf download',
+      'Email ticket',
+      'Admin dashboard analytics',
+      'Search & filter',
+      'Peformance optimization'
+    ]
+
+  },
+
+  {
     slug: "mern-ecommerce",
     title: "MERN E-Commerce Website",
     shortDesc: "A full-stack e-commerce app with authentication, cart, and admin panel.",
@@ -25,29 +77,15 @@ export const projects = [
     ],
   },
 
-
-  {
-    slug: "mern-movie",
-    title: "Movie Ticket Booking App",
-    description:
-      "A MERN-based movie ticket booking platform with seat selection and admin panel.",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    image: "/images/projects/movie.png",
-    github: "https://github.com/a1sartaj/shows",
-    live: "https://shows.a1sartaj.in",
-  },
-
   {
     slug: "mern-todo-app",
     title: "Todo App (MERN Stack)",
 
     // 👇 Used in project CARD (2–3 lines)
-    shortDescription:
-      "A full-stack MERN Todo application with secure authentication, OTP verification, protected routes, and deadline-based task management.",
+    shortDescription: "A full-stack MERN Todo application with secure authentication, OTP verification, protected routes, and deadline-based task management.",
 
     // 👇 Used in PROJECT DETAIL page
-    description:
-      "A full-stack Todo Application built using the MERN Stack. The app helps users manage their daily tasks efficiently with secure authentication, OTP verification, and role-based protected routes. Users can create, update, delete, and track todos with deadlines and completion status.",
+    description: "A full-stack Todo Application built using the MERN Stack. The app helps users manage their daily tasks efficiently with secure authentication, OTP verification, and role-based protected routes. Users can create, update, delete, and track todos with deadlines and completion status.",
 
     image: "/images/projects/todo.png",
 
@@ -55,12 +93,19 @@ export const projects = [
     tech: [
       "React",
       "Vite",
+      "React Router DOM",
+      "Axios",
+      "Context API",
       "Tailwind CSS",
+      "React Hot Toast",
+      "React Icons",
       "Node.js",
-      "Express",
+      "Express.js",
       "MongoDB",
+      "Mongoose",
       "JWT",
       "Nodemailer",
+      "Cookie Parser",
     ],
 
     github: "https://github.com/a1sartaj/todos",
@@ -82,32 +127,6 @@ export const projects = [
       "Responsive UI with toast notifications",
     ],
 
-    frontend: {
-      stack: [
-        "React",
-        "Vite",
-        "React Router DOM",
-        "Axios",
-        "Context API",
-        "Tailwind CSS",
-        "React Hot Toast",
-        "React Icons",
-      ],
-    },
-
-    backend: {
-      stack: [
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Nodemailer",
-        "Cookie Parser",
-      ],
-    
-    },
-
     deployment: {
       frontend: "VPS Server",
       backend: "VPS Server",
@@ -124,48 +143,48 @@ export const projects = [
   },
 
   {
-  slug: "personal-portfolio",
-  title: "Personal Portfolio Website",
+    slug: "personal-portfolio",
+    title: "Personal Portfolio Website",
 
-  shortDescription:
-    "A modern, responsive portfolio website built with Next.js to showcase my projects, skills, and experience as a MERN Stack Developer.",
+    shortDescription:
+      "A modern, responsive portfolio website built with Next.js to showcase my projects, skills, and experience as a MERN Stack Developer.",
 
-  description:
-    "This is my personal developer portfolio built using Next.js and Tailwind CSS. The goal of this project is to present my work in a clean, professional, and recruiter-friendly way. It includes a dynamic projects section with detailed project pages, dark/light mode support, SEO optimization, and a responsive layout across all devices.",
+    description:
+      "This is my personal developer portfolio built using Next.js and Tailwind CSS. The goal of this project is to present my work in a clean, professional, and recruiter-friendly way. It includes a dynamic projects section with detailed project pages, dark/light mode support, SEO optimization, and a responsive layout across all devices.",
 
-  image: "/images/projects/portfolio.png",
+    image: "/images/projects/portfolio.png",
 
-  tech: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "JavaScript",
-    "Git",
-    "Vercel",
-  ],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Git",
+      "Vercel",
+    ],
 
-  github: "https://github.com/a1sartaj/portfolio",
-  live: "https://a1sartaj.in",
+    github: "https://github.com/a1sartaj/portfolio",
+    live: "https://a1sartaj.in",
 
-  problem:
-    "Many developer portfolios lack structure, clarity, and scalability. Recruiters often struggle to quickly understand a developer’s skills, project depth, and problem-solving ability from cluttered or poorly designed portfolios.",
+    problem:
+      "Many developer portfolios lack structure, clarity, and scalability. Recruiters often struggle to quickly understand a developer’s skills, project depth, and problem-solving ability from cluttered or poorly designed portfolios.",
 
-  features: [
-    "Responsive layout for mobile, tablet, and desktop",
-    "Dark and light theme with persistent state",
-    "Dynamic projects listing with detail pages",
-    "Route-aware navigation for better UX",
-    "SEO optimized with Open Graph and Twitter cards",
-    "Reusable and scalable component structure",
-  ],
+    features: [
+      "Responsive layout for mobile, tablet, and desktop",
+      "Dark and light theme with persistent state",
+      "Dynamic projects listing with detail pages",
+      "Route-aware navigation for better UX",
+      "SEO optimized with Open Graph and Twitter cards",
+      "Reusable and scalable component structure",
+    ],
 
-  deployment: {
-    frontend: "Vercel",
-  },
+    deployment: {
+      frontend: "Vercel",
+    },
 
-  futureImprovements: [
-    "Add animations and page transitions",
-  ],
-}
+    futureImprovements: [
+      "Add animations and page transitions",
+    ],
+  }
 
 ];
