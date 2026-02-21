@@ -34,7 +34,7 @@ export default function Hero() {
                         <FaEnvelope /> CONTACT ME
                     </a>
 
-                    <a href='https://drive.google.com/file/d/1SxpflbSI-k6k_hC4VF9ld8nDoHcGZ44M/view?usp=sharing' target='_blank' rel="noopener noreferrer" className='flex items-center gap-1 p-4 lg:px-8  lg:py-6 rounded-full border transition-all duration-300 ease-in hover:scale-105' >
+                    <a href='https://drive.google.com/file/d/1cjVyfhno3iij_t6G2d-soUvydyU7NAps/view?usp=sharing' target='_blank' rel="noopener noreferrer" className='flex items-center gap-1 p-4 lg:px-8  lg:py-6 rounded-full border transition-all duration-300 ease-in hover:scale-105' >
                         <FaDownload /> DOWNLOAD CV
                     </a>
                 </div>

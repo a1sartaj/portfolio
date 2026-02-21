@@ -2,7 +2,7 @@ export const projects = [
   {
     slug: "mern-movie",
     title: "Movie Ticket Booking App",
-    shortDescription: "A functinality full stack movie ticket booking application with admin panel ",
+    shortDescription: "A functionality full stack movie ticket booking application with admin panel ",
     description: 'A full-stack production-style Movie Ticket Booking Web Application built with the MERN stack. Users can browse movies, select shows, choose seats, and book tickets, while Admin can manage movies, shows, and users.',
 
     tech: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Bcryptjs', 'jsonwebtoken', 'dotenv', 'node-cron', 'React', 'Vite', 'TailwindCSS', 'Axios', 'React Router', 'React Hot Toast', 'QRCode React'],
