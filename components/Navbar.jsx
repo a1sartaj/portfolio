@@ -54,7 +54,7 @@ export default function Navbar() {
                 <ThemeToggle />
 
                 {/* hover:bg-none hover:bg-white */}
-                <button className={`hidden md:flex gap-2 items-center px-4 py-2 text-white text-lg rounded-full bg-linear-to-r from-blue  to-purple hover:bg-none hover:bg-white hover:text-black transition-all duration-300 ease-in cursor-pointer hover:scale-105 `}>Hire me <FaPaperPlane /></button>
+                <a href="mailto:sartaj9806@gmail.com" className={`hidden md:flex gap-2 items-center px-4 py-2 text-white text-lg rounded-full bg-linear-to-r from-blue  to-purple hover:bg-none hover:bg-white hover:text-black transition-all duration-300 ease-in cursor-pointer hover:scale-105 `}>Hire me <FaPaperPlane /></a>
 
             </div>
         </nav>

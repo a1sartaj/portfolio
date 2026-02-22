@@ -27,7 +27,7 @@ export default function About() {
                 </h2>
 
                 <p className="mt-6 text-lg">
-                    I'm a MERN Stack Developer focused on building responsive and
+                    I'm a Junior Full Stack Developer (React + Node.js) focused on building responsive and
                     scalable web applications using modern web technologies.
                 </p>
 
@@ -39,7 +39,7 @@ export default function About() {
                 <ul className="mt-6 space-y-2 text-lg">
                     <li>• MERN Stack Developer</li>
                     <li>• BCA (IGNOU)</li>
-                    <li>• Looking for MERN Stack opportunities</li>
+                    <li>• Looking for Junior Full Stack Developer (React + Node.js)</li>
                 </ul>
             </div>
 
