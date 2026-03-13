@@ -1,12 +1,19 @@
 export const skills = [
   {
+    category: "Languages",
+    items: [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "C++",
+    ],
+  },
+  {
     category: "Frontend",
     items: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
+      "React.js",
       "Next.js",
+      "HTML5",
+      "CSS3",
       "Tailwind CSS",
     ],
   },
@@ -15,8 +22,32 @@ export const skills = [
     items: [
       "Node.js",
       "Express.js",
-      "MongoDB",
       "REST APIs",
+      "MVC Architecture",
+    ],
+  },
+  {
+    category: "Database",
+    items: [
+      "MongoDB",
+      "Mongoose",
+      "MongoDB Atlas",
+    ],
+  },
+  {
+    category: "Authentication",
+    items: [
+      "JWT",
+      "Role-Based Access Control (RBAC)",
+    ],
+  },
+  {
+    category: "Concepts",
+    items: [
+      "Data Structures & Algorithms",
+      "Async/Await",
+      "Error Handling",
+      "Debugging",
     ],
   },
   {
@@ -24,8 +55,10 @@ export const skills = [
     items: [
       "Git",
       "GitHub",
-      "VS Code",
       "Postman",
+      "VS Code",
+      "Vercel",
+      "Render",
     ],
   },
 ];
