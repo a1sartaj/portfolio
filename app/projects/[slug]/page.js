@@ -50,18 +50,18 @@ export default async function ProjectDetail({ params }) {
         </div>
 
         {/* ================= IMAGE ================= */}
-        {project.image && (
+        {project?.image && (
           <Image
             src={project.image}
             alt={project.title}
             width={900}
             height={500}
-            className="rounded-2xl"
+            className="rounded-2xl shadow-sm"
           />
         )}
 
         {/* ================= PROBLEM ================= */}
-        {project.problem && (
+        {project?.problem && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               What Problem Does It Solve?
@@ -73,7 +73,7 @@ export default async function ProjectDetail({ params }) {
         )}
 
         {/* ================= SOLUTION ================= */}
-        {project.description && (
+        {project?.description && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               Solution Overview
@@ -84,8 +84,22 @@ export default async function ProjectDetail({ params }) {
           </section>
         )}
 
+        {/* ================= Testing Account ================= */}
+        {project?.testingId?.length > 0 && (
+          <section className="space-y-4">
+            <h2 className="text-2xl font-semibold">
+              Testing Account
+            </h2>
+            <ul className="list-disc ml-6 space-y-2">
+              {project.testingId.map((testing) => (
+                <li key={testing}>{testing}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {/* ================= FEATURES ================= */}
-        {project.features?.length > 0 && (
+        {project?.features?.length > 0 && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               Key Features
@@ -99,15 +113,15 @@ export default async function ProjectDetail({ params }) {
         )}
 
         {/* ================= TECH STACK ================= */}
-        {project.tech?.length > 0 && (
+        {project?.tech?.length > 0 && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               Tech Stack
             </h2>
             <div className="flex flex-wrap gap-2">
-              {project.tech.map((tech) => (
+              {project.tech.map((tech, index) => (
                 <span
-                  key={tech}
+                  key={index}
                   className="px-3 py-1 rounded-full text-sm bg-gray-200/40"
                 >
                   {tech}
@@ -118,7 +132,7 @@ export default async function ProjectDetail({ params }) {
         )}
 
         {/* ================= DEPLOYMENT ================= */}
-        {project.deployment && (
+        {project?.deployment && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               Deployment
@@ -138,7 +152,7 @@ export default async function ProjectDetail({ params }) {
         )}
 
         {/* ================= FUTURE ================= */}
-        {project.futureImprovements?.length > 0 && (
+        {project?.futureImprovements?.length > 0 && (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">
               Future Improvements

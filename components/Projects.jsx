@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { projects } from "@/data/projects";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 

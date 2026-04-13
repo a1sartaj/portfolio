@@ -5,7 +5,7 @@ export const projects = [
     shortDescription: "A functionality full stack movie ticket booking application with admin panel ",
     description: 'A full-stack production-style Movie Ticket Booking Web Application built with the MERN stack. Users can browse movies, select shows, choose seats, and book tickets, while Admin can manage movies, shows, and users.',
 
-    tech: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Bcryptjs', 'jsonwebtoken', 'dotenv', 'node-cron', 'React', 'Vite', 'TailwindCSS', 'Axios', 'React Router', 'React Hot Toast', 'QRCode React'],
+    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Mongoose', 'Bcryptjs', 'jsonwebtoken', 'dotenv', 'node-cron', 'Vite', 'TailwindCSS', 'Axios', 'React Router', 'React Hot Toast', 'QRCode React'],
 
     image: "/images/projects/movie.png",
     github: "https://github.com/a1sartaj/shows",
@@ -78,6 +78,50 @@ export const projects = [
   },
 
   {
+    slug: "daily-based-finance-app",
+    title: "Daily Based Finance App",
+    shortDescription: "A functionality full stack daily based financer application",
+    description: 'This is a daily-based loan full stack application (MERN Stack) that allows financiers to manage EMI entries like a ledger account, track client payments, identify due or missed payments, and monitor how much amount is pending or needs to be paid.',
+
+    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Mongoose', 'Bcryptjs', 'jsonwebtoken', 'dotenv', 'node-cron', 'Vite', 'TailwindCSS', 'Axios', 'React Router', 'React Hot Toast', 'TypeScript', 'Cookie parser', 'Axios'],
+
+    testingId : ['Email : sartaj@gmail.com', 'Password : 123'],    
+
+    image: "/images/projects/pggroup.webp",
+    github: "https://github.com/a1sartaj/financer",
+    live: "https://pggroup.a1sartaj.in",
+
+    problem: 'It solves multiple problems by eliminating the need for manual pen-and-paper record keeping and providing a digital solution, allowing financiers to manage data from anywhere. It also removes the need for manual EMI calculations, as the application automatically shows pending amounts, paid amounts, and remaining balances, making the process faster, more accurate, and efficient.',
+
+    features: [
+      "Financier can create new clients",
+      "View a list of all clients",
+      "View detailed client profiles",
+      "Update client information",
+      "Delete client (soft delete with automatic permanent deletion after 30 days)",
+      "Restore deleted clients within 30 days",
+      "Mark clients as Defaulter or Regular",
+      "Add single EMI entry for a client",
+      "Edit EMI entries",
+      "Delete individual EMI records",
+      "Bulk (bundle) EMI entry for multiple clients",
+      "Print daily transaction sheet",
+      "View automatically calculated financial data"
+    ],
+
+    deployment: {
+      frontend: 'VPS server',
+      backend: 'VPS server',
+      database: 'VPS sever'
+    },
+
+    futureImprovements: [
+      'N/A',
+    ]
+
+  },
+
+  {
     slug: "mern-todo-app",
     title: "Todo App (MERN Stack)",
 
@@ -91,7 +135,10 @@ export const projects = [
 
     // 👇 Tech badges
     tech: [
+      "MongoDB",
+      "Express.js",
       "React",
+      "Node.js",
       "Vite",
       "React Router DOM",
       "Axios",
@@ -99,9 +146,6 @@ export const projects = [
       "Tailwind CSS",
       "React Hot Toast",
       "React Icons",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
       "Mongoose",
       "JWT",
       "Nodemailer",
